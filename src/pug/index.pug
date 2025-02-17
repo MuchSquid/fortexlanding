@@ -1,0 +1,246 @@
+html(lang="en")
+    head
+        title Page title
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(rel="stylesheet", href="https://rsms.me/inter/inter.css")
+        link(rel="stylesheet", href="css/tailwind/tailwind.min.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="shuffle-for-tailwind.png")
+        script(src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js", defer="defer")
+    body(class="antialiased bg-body text-body font-body")
+        div(class="")
+            section(class="pb-8 bg-top bg-cover bg-no-repeat", style="background-image: url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHwzMHx8YmxhY2t8ZW58MHx8fHwxNzIzNjg1MzA1fDA&ixlib=rb-4.0.3&q=85&w=1920')", x-data="{ mobileNavOpen: false }")
+                div(class="container px-4 mx-auto")
+                    nav(class="flex justify-between items-center py-6")
+                        a(class="text-3xl text-white font-semibold leading-none", href="#")
+                            img(class="h-12", src="images/LOGO-POSITIVO.png", alt="", width="auto")
+                        div(class="lg:hidden")               
+                        ul(class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12")
+                            li         
+                            li         
+                            li         
+                            li       
+                        div(class="hidden lg:block")
+                            a(class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded hover:text-white hover:border-white", href="#") Contactanos
+                    div(class="py-12 text-center")
+                        div(class="max-w-lg mx-auto mb-8")
+                            h2(class="text-3xl md:text-4xl mb-4 text-white font-bold font-heading")
+                                span(class="h-24") Tu marca, sin
+                                |           
+                                span(class="h-24 text-blue-600") límites
+                                |           
+                                span(class="h-24") en el mundo digital
+                            p(class="text-blueGray-400 leading-relaxed") Desde sitios web a medida hasta identidad corporativa completa. Fortex es tu socio en la evolución digital.
+                        div
+                            a(class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded", href="#") Consulta Gratuita
+                            a(class="block sm:inline-block py-4 px-8 text-xs text-blueGray-100 hover:text-blueGray-200 text-center font-semibold leading-none border border-blueGray-200 hover:border-blueGray-300 rounded", href="#") Descubre cómo
+                div(:class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}", class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50")
+                    div(x-on:click="mobileNavOpen = !mobileNavOpen", class="fixed inset-0 bg-blueGray-800 opacity-25")
+                    nav(class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto")
+                        div(class="flex items-center mb-8")
+                            a(class="mr-auto text-3xl font-semibold leading-none", href="#")
+                                img(class="h-10", src="metis-assets/logos/metis/metis.svg", alt="", width="auto")
+                            button(x-on:click="mobileNavOpen = !mobileNavOpen")                   
+                        div
+                            ul
+                                li(class="mb-1")
+                                    a(class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600", href="#") Product
+                                li(class="mb-1")
+                                    a(class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600", href="#") Company
+                                li(class="mb-1")
+                                    a(class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600", href="#") About Us
+                                li(class="mb-1")
+                                    a(class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600", href="#") Features
+                            div(class="mt-4 pt-6 border-t border-blueGray-100")
+                                a(class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded", href="#") Sign Up
+                                a(class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded", href="#") Log In
+                        div(class="mt-auto")
+                            p(class="my-4 text-xs text-blueGray-400")
+                                span Get in Touch
+                                |           
+                                a(class="text-blue-600 hover:text-blue-600 underline", href="#") info@example.com
+                            a(class="inline-block px-1", href="#")
+                                img(src="metis-assets/icons/facebook-blue.svg", alt="")
+                            |         
+                            a(class="inline-block px-1", href="#")
+                                img(src="metis-assets/icons/twitter-blue.svg", alt="")
+                            |         
+                            a(class="inline-block px-1", href="#")
+                                img(src="metis-assets/icons/instagram-blue.svg", alt="")
+            section(class="pt-16 pb-20")
+                div(class="container px-4 mx-auto")
+                    div(class="flex flex-wrap items-center mb-12")
+                        div(class="w-full lg:w-1/2 mb-6 lg:mb-0")
+                            h2(class="text-4xl font-bold font-heading")
+                                span(class="text-wh text-white") Soluciones Integrales,
+                                |                 
+                                span(class="text-blue-600") Resultados
+                                |                 
+                                span(class="text-white") excepcionales
+                        div(class="w-full lg:w-1/2")
+                            p(class="lg:pl-16 leading-loose text-gray-200") En Fortex, no solo creamos sitios web; construimos experiencias digitales completas. Nuestras soluciones están diseñadas para potenciar tu presencia online y facilitar tu éxito en el mundo digital.
+                    div(class="flex flex-wrap -mx-3 -mb-6")
+                        div(class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6")
+                            div(class="pt-8 px-6 pb-6 bg-white text-center rounded shadow")
+                                svg(class="w-10 h-10 mx-auto mb-4 text-blue-600", fill="none", stroke="currentColor", viewbox="0 0 24 24", xmlns="http://www.w3.org/2000/svg")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z")
+                                h3(class="mb-2 font-bold font-heading") Portal del Cliente
+                                p(class="text-sm text-blueGray-400") Acceso en tiempo real al progreso de tu proyecto y comunicación directa con nuestro equipo.
+                        div(class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6")
+                            div(class="pt-8 px-6 pb-6 bg-white text-center rounded shadow")
+                                svg(class="w-10 h-10 mx-auto mb-4 text-blue-600", fill="none", stroke="currentColor", viewbox="0 0 24 24", xmlns="http://www.w3.org/2000/svg")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2")
+                                h3(class="mb-2 font-bold font-heading") Código Personalizado
+                                p(class="text-sm text-blueGray-400") Desarrollo a medida para máximo rendimiento y flexibilidad total adaptada a tus necesidades únicas.
+                        div(class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6")
+                            div(class="pt-8 px-6 pb-6 bg-white text-center rounded shadow")
+                                svg(class="w-10 h-10 mx-auto mb-4 text-blue-600", fill="none", stroke="currentColor", viewbox="0 0 24 24", xmlns="http://www.w3.org/2000/svg")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M13 10V3L4 14h7v7l9-11h-7z")
+                                h3(class="mb-2 font-bold font-heading") Diseño Cautivador
+                                p(class="text-sm text-blueGray-400") Interfaces intuitivas y atractivas visualmente, con experiencias de usuario optimizadas para conversión.
+                        div(class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6")
+                            div(class="pt-8 px-6 pb-6 text-center rounded shadow")
+                                svg(class="w-10 h-10 mx-auto mb-4 text-blue-600", fill="none", stroke="currentColor", viewbox="0 0 24 24", xmlns="http://www.w3.org/2000/svg")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z")
+                                h3(class="mb-2 font-bold font-heading text-white") SEO Integrado
+                                p(class="text-sm text-blueGray-400 text-gray-200") Optimización para buscadores desde el inicio y mejora continua para aumentar tu visibilidad online.
+            section(class="py-20")
+                div(class="container px-4 mx-auto")
+                    div(class="flex flex-wrap -mx-8")
+                        div(class="w-full lg:w-1/2 px-8")
+                            div(class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0")
+                                h2(class="mb-4 text-3xl lg:text-4xl font-bold font-heading") Nuestro enfoque: Simple, Efectivo, Personalizado
+                                p(class="mb-8 leading-loose text-blueGray-400") En Fortex, creemos en un proceso transparente y colaborativo. Nos adaptamos a tus necesidades específicas para crear soluciones digitales que impulsen tu negocio. Desde el primer contacto hasta la entrega final, estamos comprometidos con tu éxito.
+                        div(class="w-full lg:w-1/2 px-8")
+                            ul(class="")
+                                li(class="flex -mx-4")
+                                    div(class="px-4")
+                                        span(class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600") 1
+                                    div(class="px-4")
+                                        h3(class="my-4 text-xl font-semibold") Descubrimiento y Planificación
+                                        p(class="text-blueGray-400 leading-loose") Consultamos, analizamos y proponemos una estrategia personalizada que se alinea con tus objetivos y presupuesto.
+                                li(class="flex -mx-4")
+                                    div(class="px-4")
+                                        span(class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600") 2
+                                    div(class="px-4")
+                                        h3(class="my-4 text-xl font-semibold") Diseño y Desarrollo a Medida
+                                        p(class="text-blueGray-400 leading-loose") Creamos un diseño único y desarrollamos código personalizado, manteniendo una comunicación constante contigo.
+                                li(class="flex -mx-4")
+                                    div(class="px-4")
+                                        span(class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600") 3
+                                    div(class="px-4")
+                                        h3(class="my-4 text-xl font-semibold") Lanzamiento y Soporte Continuo
+                                        p(class="text-blueGray-400 leading-loose") Implementamos tu proyecto, proporcionamos herramientas de seguimiento y ofrecemos soporte técnico continuo.
+                                        |       
+            section(class="pt-20 pb-24 bg-blue-600")
+                div(class="container px-4 mx-auto")
+                    div(class="max-w-xl mx-auto text-center")
+                        span(class="inline-block text-xs py-1 px-3 bg-blue-500 text-white font-semibold rounded-xl") Empieza hoy
+                        h2(class="my-3 text-3xl md:text-4xl text-white font-bold font-heading") Impulsa tu Presencia Digital con Fortex
+                        p(class="text-sm md:text-base text-white") Transforma tu visión en una poderosa realidad online. Nuestro equipo está listo para crear tu sitio web personalizado y llevar tu marca al siguiente nivel.
+                        div(class="mt-10")
+                            a(class="inline-block py-4 px-8 text-xs text-blue-600 hover:text-white font-semibold leading-none bg-white hover:bg-blue-600 border hover:border-white rounded transition duration-300", href="#") Genera una cita con Nosotros
+            section(class="py-20 lg:bg-contain bg-top bg-no-repeat", style="background-image: url('metis-assets/backgrounds/intersect.svg');")
+                div(class="container mx-auto px-4")
+                    div(class="max-w-sm mx-auto mb-12 text-center")
+                        h2(class="mb-4 text-3xl md:text-4xl font-bold font-heading") Resolvemos tus dudas
+                        p(class="text-sm md:text-base leading-loose text-blueGray-500")
+                            span Encuentras respuestas a las preguntas más comunes sobre nuestros servicios y proceso de trabajo. 
+                            |               
+                            a(class="text-blue-600 hover:text-blue-700", href="#") Si tienes más dudas, no dudes en contactarnos.
+                    div(class="max-w-3xl mx-auto")
+                        ul(class="space-y-4")
+                            li(class="px-6 py-4 bg-white rounded shadow", x-data="{ accordion: false }")
+                                button(class="w-full flex justify-between items-center text-left font-bold font-heading", x-on:click="accordion = !accordion", :class="{ 'text-blue-600 hover:text-blue-700': accordion, 'hover:text-blueGray-700': !accordion }")
+                                    span ¿Cuánto tiempo toma desarrollar un sitio web?
+                                    |                   
+                                    span(:class="{'rotate-90 text-blueGray-500': accordion, 'rotate-0 text-blueGray-300': !accordion }", class="inline-block transform text-blueGray-300")
+                                        svg(class="w-4 h-4 ml-2", fill="none", stroke="currentColor", viewbox="0 0 24 24", xmlns="http://www.w3.org/2000/svg")
+                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M9 5l7 7-7 7")
+                                div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                    p(class="mt-2 text-blueGray-400 font-normal leading-loose") El tiempo de desarrollo varía según la complejidad del proyecto, pero en promedio puede tomar entre 4 y 8 semanas para un sitio web completo y funcional.
+                            li(class="px-6 py-4 bg-white rounded shadow", x-data="{ accordion: false }")
+                                button(class="w-full flex justify-between items-center text-left font-bold font-heading", x-on:click="accordion = !accordion", :class="{ 'text-blue-600 hover:text-blue-700': accordion, 'hover:text-blueGray-700': !accordion }")
+                                    span ¿Qué hace que su código personalizado sea mejor que usar soluciones preconstruidas?
+                                    |                     
+                                    span(:class="{'rotate-90 text-blueGray-500': accordion, 'rotate-0 text-blueGray-300': !accordion }", class="inline-block transform text-blueGray-300")
+                                        svg(class="w-4 h-4 ml-2", fill="none", stroke="currentColor", viewbox="0 0 24 24", xmlns="http://www.w3.org/2000/svg")
+                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M9 5l7 7-7 7")
+                                div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                    p(class="mt-2 text-blueGray-400 font-normal leading-loose") Nuestro código a medida proporciona una mayor velocidad, seguridad y flexibilidad, permitiéndonos crear soluciones que se adaptan perfectamente a las necesidades únicas de tu negocio, a diferencia de las soluciones genéricas preconstruidas.
+                            li(class="px-6 py-4 bg-white rounded shadow", x-data="{ accordion: false }")
+                                button(class="w-full flex justify-between items-center text-left font-bold font-heading", x-on:click="accordion = !accordion", :class="{ 'text-blue-600 hover:text-blue-700': accordion, 'hover:text-blueGray-700': !accordion }")
+                                    span ¿Ofrecen servicios de mantenimiento post-lanzamiento?
+                                    |                     
+                                    span(:class="{'rotate-90 text-blueGray-500': accordion, 'rotate-0 text-blueGray-300': !accordion }", class="inline-block transform text-blueGray-300")
+                                        svg(class="w-4 h-4 ml-2", fill="none", stroke="currentColor", viewbox="0 0 24 24", xmlns="http://www.w3.org/2000/svg")
+                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M9 5l7 7-7 7")
+                                div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                    p(class="mt-2 text-blueGray-400 font-normal leading-loose") Sí, contamos con planes de mantenimiento que incluyen actualizaciones regulares, monitoreo de seguridad y soporte técnico continuo para asegurar que tu sitio web funcione sin problemas.
+                            li(class="px-6 py-4 bg-white rounded shadow", x-data="{ accordion: false }")
+                                button(class="w-full flex justify-between items-center text-left font-bold font-heading", x-on:click="accordion = !accordion", :class="{ 'text-blue-600 hover:text-blue-700': accordion, 'hover:text-blueGray-700': !accordion }")
+                                    span ¿Cómo garantizan que mi sitio web será amigable para SEO?
+                                    |                     
+                                    span(:class="{'rotate-90 text-blueGray-500': accordion, 'rotate-0 text-blueGray-300': !accordion }", class="inline-block transform text-blueGray-300")
+                                        svg(class="w-4 h-4 ml-2", fill="none", stroke="currentColor", viewbox="0 0 24 24", xmlns="http://www.w3.org/2000/svg")
+                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M9 5l7 7-7 7")
+                                div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                    p(class="mt-2 text-blueGray-400 font-normal leading-loose") Desde la fase de diseño, implementamos las mejores prácticas de SEO, como la optimización de la velocidad del sitio, una estructura de URLs clara y metadatos personalizados, para garantizar que tu sitio web sea fácilmente encontrado por los motores de búsqueda.
+            section(class="py-20")
+                div(class="container px-4 mx-auto")
+                    div(class="max-w-2xl lg:max-w-3xl mx-auto")
+                        div(class="mb-12 text-center")
+                            h2(class="text-4xl font-bold font-heading") Contacta con Nosotros
+                            p(class="text-blueGray-400") Estamos atentos a tu comunicación para poder implementar tus nuevas herramientas digitales.
+                        div(class="flex flex-wrap -mx-3 text-center")
+                            div(class="w-1/2 lg:w-1/3 px-3 mb-12")
+                                svg(class="mb-6 h-8 w-8 mx-auto text-blue-600", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z")
+                                div(class="leading-relaxed")
+                                    span(class="text-sm text-blueGray-400") Teléfono
+                                    p +51 979 488 967
+                                    p +51 942 343 895
+                            div(class="w-1/2 lg:w-1/3 px-3 mb-12")
+                                svg(class="mb-6 h-8 w-8 mx-auto text-blue-600", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z")
+                                div(class="leading-relaxed")
+                                    span(class="text-sm text-blueGray-400") E-mail
+                                    p ventas@fortexbusiness.com
+                            div(class="w-full lg:w-1/3 px-3 mb-12")
+                                svg(class="mb-6 h-8 w-8 mx-auto text-blue-600", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M15 11a3 3 0 11-6 0 3 3 0 016 0z")
+                                div(class="leading-relaxed")
+                                    span(class="text-sm text-blueGray-400") Ubicación
+                                    p Lima, Perú
+                        div
+                            form                 
+                            |                 
+                            |                 
+                            |               
+            section(class="py-20 bg-blue-600")
+                div(class="container px-4 mx-auto")
+                    div(class="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left")
+                        div(class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0")
+                            a(class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none", href="#")
+                                img(class="h-16", src="images/LOGO-POSITIVO.png", alt="", width="auto")
+                        div(class="w-full lg:w-2/5 px-3 mb-8 lg:mb-0")
+                            p(class="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg leading-relaxed text-white") Fortex: Transformando visiones en experiencias digitales. Soluciones personalizadas, diseño innovador y estrategias de marca para llevar tu presencia online al siguiente nivel.
+                        div(class="w-full lg:w-1/5 px-3 mb-8 lg:mb-0")
+                            p(class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-white") Ubicación
+                            p(class="lg:text-lg text-blueGray-400 text-white") Lima, Perú
+                        div(class="w-full lg:w-1/5 px-3")
+                            p(class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800 text-white") Contactos
+                            p(class="lg:text-lg text-blueGray-400 text-white") ventas@fortexbusiness.com
+                    div(class="flex flex-col lg:flex-row items-center lg:justify-between")
+                        p(class="text-blueGray-400 text-white text-sm") © Copyright 2024 Fortex Business Solution. Todos los derechos reservados.
+                        div(class="order-first lg:order-last -mx-2 mb-4 lg:mb-0")
+                            a(class="inline-block px-2", href="#")
+                                img(src="metis-assets/icons/facebook-blue.svg", alt="")
+                            |               
+                            a(class="inline-block px-2", href="#")
+                                img(src="metis-assets/icons/twitter-blue.svg", alt="")
+                            |               
+                            a(class="inline-block px-2", href="#")
+                                img(src="metis-assets/icons/instagram-blue.svg", alt="")
